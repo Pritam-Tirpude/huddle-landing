@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: url("../images/bg-desktop.svg");
+  background-color: #674baf;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+  margin-top: 5rem;
+  width: 90%;
+}
+
+.illustrator-content {
+  margin-top: 5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.illustrator-content .mockup-image {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+
+.illustrator-content .content h1 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 4rem;
+}
+
+.illustrator-content .content p {
+  margin-top: 2rem;
+  color: white;
+  font-size: 2rem;
+}
+
+.illustrator-content .content button {
+  margin-top: 2rem;
+  border: none;
+  border-radius: 2rem;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 40px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 40px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem 1.5rem;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  background: white;
+  color: #674baf;
+  width: 50%;
+}
+
+.illustrator-content .content button:hover {
+  background: #e882e8;
+  color: white;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.illustrator-content .social-network {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-grid-column: 3;
+  grid-column: 3/3;
+}
+
+.illustrator-content .social-network .facebook button {
+  padding: 1rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.illustrator-content .social-network .facebook button:hover {
+  color: #e882e8;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.illustrator-content .social-network .twitter button {
+  padding: 1rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.illustrator-content .social-network .twitter button:hover {
+  color: #e882e8;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.illustrator-content .social-network .instagram button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.illustrator-content .social-network .instagram button:hover {
+  color: #e882e8;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    background: url("../images/bg-mobile.svg");
+    background-color: #674baf;
+    background-repeat: no-repeat;
+  }
+  main {
+    display: block;
+    margin-top: 5rem;
+  }
+  .illustrator-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .illustrator-content .mockup-image img {
+    max-width: 65vw;
+  }
+  .illustrator-content .content {
+    margin-top: 10rem;
+  }
+  .illustrator-content .content h1 {
+    text-align: center;
+  }
+  .illustrator-content .content p {
+    text-align: center;
+  }
+  .illustrator-content .content button {
+    margin-top: 5rem;
+    width: 100%;
+  }
+  .illustrator-content .social-network {
+    margin-top: 5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

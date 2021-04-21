@@ -1,0 +1,36 @@
+$header1: 4rem;
+$header2: 3.5rem;
+$header3: 2.5rem;
+$header4: 2rem;
+$header5: 1.5rem;
+$header6: 1rem;
+
+$primary_violet: hsl(257, 40%, 49%);
+$primary_soft_magenta: hsl(300, 69%, 71%);
+$primary_white: hsl(0, 0%, 100%);
+
+$font_poppins: "Poppins", sans-serif;
+$font_open_sans: "Open Sans", sans-serif;
+
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font_open_sans;
+  background: url("../images/bg-desktop.svg");
+  background-color: $primary_violet;
+}
